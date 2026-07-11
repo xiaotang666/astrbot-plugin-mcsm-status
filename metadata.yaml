@@ -1,0 +1,9 @@
+name: astrbot_plugin_mcsm_status
+display_name: MCSM 状态查询
+desc: MCSManager 服务器状态查询与管理插件，支持文本/图片面板、权限管理、背景图本地缓存与轮询、say广播、序号操作。
+version: v1.9.0
+author: xiaotang666
+repo: https://github.com/xiaotang666/astrbot_plugin_mcsm-status
+astrbot_version: ">=4.16"
+support_platforms:
+  - aiocqhttp

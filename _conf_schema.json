@@ -1,0 +1,78 @@
+{
+    "base_url": {
+        "title": "MCSManager 面板地址",
+        "description": "MCSManager Web 面板的访问地址，例如 http://127.0.0.1:23333",
+        "type": "string",
+        "default": "http://127.0.0.1:23333"
+    },
+    "api_key": {
+        "title": "API Key",
+        "description": "在 MCSManager 面板 → 用户设置 → API 接口中生成",
+        "type": "string",
+        "default": ""
+    },
+    "timeout": {
+        "title": "请求超时（秒）",
+        "description": "HTTP 请求超时时间，默认 10 秒",
+        "type": "int",
+        "default": 10
+    },
+    "super_admin_ids": {
+        "title": "超级管理员 QQ 号",
+        "description": "拥有所有命令权限，可直接使用全部指令",
+        "type": "list",
+        "default": []
+    },
+    "admin_ids": {
+        "title": "普通管理员 QQ 号",
+        "description": "可使用下方「管理员可用命令」中配置的指令",
+        "type": "list",
+        "default": []
+    },
+    "admin_commands": {
+        "title": "管理员可用命令",
+        "description": "管理员可使用的子命令，可选: status, list, start, stop, restart, kill, cmd, say, panel, help",
+        "type": "list",
+        "default": [
+            "status",
+            "list",
+            "start",
+            "stop",
+            "restart",
+            "kill",
+            "cmd",
+            "say",
+            "panel",
+            "help"
+        ]
+    },
+    "member_ids": {
+        "title": "普通成员 QQ 号",
+        "description": "可使用下方「成员可用命令」中配置的指令",
+        "type": "list",
+        "default": []
+    },
+    "member_commands": {
+        "title": "成员可用命令",
+        "description": "普通成员可使用的子命令，建议仅开放查询类指令",
+        "type": "list",
+        "default": [
+            "status",
+            "list",
+            "panel",
+            "help"
+        ]
+    },
+    "group_whitelist": {
+        "title": "群聊白名单",
+        "description": "填写群号，仅在指定群聊中响应指令，为空则所有群聊均可使用",
+        "type": "list",
+        "default": []
+    },
+    "background_urls": {
+        "title": "面板背景图 URL",
+        "description": "支持多张图片地址，面板渲染时按顺序轮询切换。为空则自动使用 backgrounds/ 目录中的本地图片，推荐尺寸 680x400",
+        "type": "list",
+        "default": []
+    }
+}
